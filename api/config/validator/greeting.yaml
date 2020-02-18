@@ -1,0 +1,4 @@
+App\Entity\Greeting:
+    properties:
+        name:
+            - NotBlank: ~
