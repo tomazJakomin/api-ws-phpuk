@@ -1,0 +1,5 @@
+App\Entity\Greeting:
+    greeting_{1..10}:
+        name: <sentence(4)>
+    greeting_test:
+        name: 'test'
