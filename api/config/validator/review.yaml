@@ -1,4 +1,4 @@
-App\Entity\Greeting:
+App\Entity\Review:
     properties:
         review:
             - NotBlank: ~

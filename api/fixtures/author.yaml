@@ -1,5 +1,5 @@
-#App\Entity\Author:
-#    book_{1..9}:
-#        firstname: <firstName()>
-#        lastname: <lastName()>
-#        birthday: <dateTime()>
+App\Entity\Author:
+    book_{1..9}:
+        firstname: <firstName()>
+        lastname: <lastName()>
+        birthday: <dateTime()>

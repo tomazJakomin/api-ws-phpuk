@@ -42,10 +42,15 @@ class Book
     private $avarageReviewRate;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Author", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="App\Entity\Author",  inversedBy="books" cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
-    private $author_id;
+    private $author;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Review",  mappedBy="book" cascade={"persist", "remove"})
+     */
+    private $reviews;
 
     public function getId(): ?int
     {

@@ -1,4 +1,4 @@
-App\Entity\Greeting:
+App\Entity\Book:
     properties:
         isbn:
             - NotBlank: ~
